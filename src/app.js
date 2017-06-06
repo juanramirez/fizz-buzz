@@ -1,5 +1,5 @@
 module.exports = {
   translate: (input) => {
-    return input
+    return input.toString()
   }
 }
