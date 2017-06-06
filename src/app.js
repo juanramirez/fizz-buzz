@@ -9,7 +9,6 @@ let translate = input => {
 }
 
 module.exports = {
-  translate: translate,
   getSequence: () => {
     let result = []
     for (let counter = 1; counter <= 100; counter++)
