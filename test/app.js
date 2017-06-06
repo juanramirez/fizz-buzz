@@ -18,4 +18,8 @@ describe('app', () => {
   it('will return the input as a string if it is a 7', () => {
     expect(app.translate(7)).to.be.eq('7')
   })
+
+  it('will return Fizz if the input is 3', () => {
+    expect(app.translate(3)).to.be.eq('Fizz')
+  })
 })
