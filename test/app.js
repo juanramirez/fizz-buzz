@@ -46,4 +46,8 @@ describe('app', () => {
   it('will return FizzBuzz if the input is 15', () => {
     expect(app.translate(15)).to.be.eq('FizzBuzz')
   })
+
+  it('will return FizzBuzz if the input is 30', () => {
+    expect(app.translate(30)).to.be.eq('FizzBuzz')
+  })
 })
