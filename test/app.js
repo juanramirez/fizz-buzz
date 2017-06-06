@@ -40,4 +40,9 @@ describe('app', () => {
     it('will return FizzBuzz if the input is 30', () =>
       expect(app.translate(30)).to.be.eq('FizzBuzz'))
   })
+
+  describe('getSequence', () => {
+    it('will return an array of 100 elements for arguments (1,100)', () =>
+      expect(app.getSequence(1, 100).length).to.be.eq(100))
+  })
 })
