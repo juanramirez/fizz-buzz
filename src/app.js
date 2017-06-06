@@ -1,15 +1,13 @@
+let _ = require('lodash')
+
 let translate = input => {
-  if (input === 13)
-    return 'Fizz'
-  if (input === 31)
-    return 'Fizz'
-  if (input === 43)
-    return 'Fizz'
   if (input % 15 === 0)
     return 'FizzBuzz'
   if (input % 5 === 0)
     return 'Buzz'
   if (input % 3 === 0)
+    return 'Fizz'
+  if (_.includes(input.toString(), '3'))
     return 'Fizz'
   return input.toString()
 }
