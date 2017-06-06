@@ -1,5 +1,7 @@
 module.exports = {
   translate: (input) => {
-    return 1
+    if (input === 1)
+      return 1
+    return 2
   }
 }
