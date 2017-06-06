@@ -1,6 +1,6 @@
 let chai = require('chai')
 let expect = chai.expect
-let app = require('src/app')
+let app = require('../src/app')
 
 describe('app', () => {
   describe('getSequence', () => {
