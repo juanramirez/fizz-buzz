@@ -44,5 +44,8 @@ describe('app', () => {
   describe('getSequence', () => {
     it('will return an array of 100 elements for arguments (1,100)', () =>
       expect(app.getSequence(1, 100).length).to.be.eq(100))
+
+    it('will return the 1 as a string for the position 1 of the result', () =>
+      expect(app.getSequence(1, 100)[0]).to.be.eq('1'))
   })
 })
