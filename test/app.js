@@ -14,4 +14,8 @@ describe('app', () => {
   it('will not change the input if it is a 4', () => {
     expect(app.translate(4)).to.be.eq(4)
   })
+
+  it('will not change the input if it is a 7', () => {
+    expect(app.translate(7)).to.be.eq(7)
+  })
 })
