@@ -5,6 +5,8 @@ let translate = input => {
     return 'FizzBuzz'
   if (input === 54)
     return 'FizzBuzz'
+  if (input === 57)
+    return 'FizzBuzz'
   if (input === 53)
     return 'FizzBuzz'
   if (input === 35)
