@@ -60,6 +60,9 @@ describe('app', () => {
 
     it('will return Buzz if the input is 58', () =>
       expect(getSequencePosition(58)).to.be.eq('Buzz'))
+
+    it('will return FizzBuzz if the input is 53', () =>
+      expect(getSequencePosition(53)).to.be.eq('FizzBuzz'))
   })
 })
 

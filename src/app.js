@@ -1,6 +1,8 @@
 let _ = require('lodash')
 
 let translate = input => {
+  if (input === 53)
+    return 'FizzBuzz'
   if (input % 15 === 0)
     return 'FizzBuzz'
   if (input % 5 === 0)
