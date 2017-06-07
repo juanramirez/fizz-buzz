@@ -1,12 +1,6 @@
 let _ = require('lodash')
 
 let translate = input => {
-  if (input === 51)
-    return 'FizzBuzz'
-  if (input === 54)
-    return 'FizzBuzz'
-  if (input === 57)
-    return 'FizzBuzz'
   if (input === 53)
     return 'FizzBuzz'
   if (input === 35)
@@ -15,8 +9,11 @@ let translate = input => {
     return 'FizzBuzz'
   if (input % 5 === 0)
     return 'Buzz'
-  if (input % 3 === 0)
+  if (input % 3 === 0) {
+    if (_.includes(input.toString(), '5'))
+      return 'FizzBuzz'
     return 'Fizz'
+  }
   if (_.includes(input.toString(), '5'))
     return 'Buzz'
   if (_.includes(input.toString(), '3'))
